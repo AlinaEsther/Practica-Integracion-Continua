@@ -12,10 +12,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
+      - name: Imprime la versión de Node.js
+        run: node -v
       - name: Verifica la instalación de npm
         run: npm -v
       - name: Instala dependencias
         run: npm install
       - name: Ejecuta pruebas unitarias
         run: npm test
-        
